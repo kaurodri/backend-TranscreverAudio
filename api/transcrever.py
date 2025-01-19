@@ -6,7 +6,7 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
-model = whisper.load_model("base")
+model = whisper.load_model("small")
 
 @app.get("/")
 def read_root():
